@@ -1,0 +1,435 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   border: none;
+   text-decoration: none;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+/* Menu */
+.content {
+
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: dark brown;
+    position: fixed;
+    padding-left: 30rem;
+
+}
+
+.logo{
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 { 
+    color: white;
+    font-size: 1.6rem;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .List-Menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .List-Menu li a {
+    padding: 3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms ease-in;
+
+}
+
+.content .List-Menu li a:hover {
+    background-color: #3333;
+    border-bottom:4px solid yellowgreen;
+    color: yellow;
+
+}
+
+
+/*first-section*/
+
+.first-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(29,29, 29 ,0.8),rgba(29,29, 29 ,0.8)),url(./fundo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section .conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.first-section h1 {
+    color: whitesmoke;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.first-section h2 {
+    color: greenyellow;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.btn button{
+    width: 230px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    margin-top: 5rem;
+    transition: all 400ms ease-in;
+}
+
+.btn button:hover{
+    border: 1px solid yellowgreen;
+    background-color: transparent;
+    color:yellow
+}
+
+.btn {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sobre Nós */
+.sobre-nos{
+    background-color: #1f1e1f;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sobre-nos img{
+    width: 450px;
+    height: 450px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 3px solid rgb(155, 155, 155);
+
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contentsobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentsobre h2{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.contentsobre p {
+    text-align: center;
+    font-size: 1.9rem;
+    width: 600px;
+}
+
+/*Cardapio*/
+
+
+
+.cardapio {
+    width: 100vw;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(12, 12, 12, 0.9);
+}
+
+.cardapio h2 {
+    font-size: 5rem;
+    color: #e6e6e6;
+    text-transform: uppercase;
+}
+
+.itens-cardapio{
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,350px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.itens-cardapio .Info{
+    background-color: rgb(57, 56, 56);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+.itens-cardapio .Info h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    color: azure;
+}
+
+.itens-cardapio .Info h4 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 110px 110px;
+    margin-left: 6rem;
+    color: yellowgreen;
+
+}
+.itens-cardapio .Info h4 span {
+    font-size: 1.6rem;
+    color: red;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+}
+
+.itens-cardapio div {
+    background-color: #5e525e;
+    box-shadow: 0px 0px 4px 1px;
+}
+
+.itens-cardapio .Info  .pedir{
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: yellow;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    transition: all 200ms ease-in;
+}
+
+.itens-cardapio .Info .pedir:hover{
+    background-color: #5e525e;
+    color: whitesmoke;
+}
+
+/*Contatos*/
+
+.contatos{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: aliceblue;
+    padding-bottom: 4rem;
+}
+
+.contatos h3 {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+.contatos-seçao{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.contatos-seçao i {
+    margin-right: 1rem;
+}
+
+.contatos-seçao div {
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.contatos-seçao div:hover{
+    color: yellow;
+}
+
+footer {
+    height: 25px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:1200px) {
+    .main {
+        display: block;
+    }
+    
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 12%;
+        padding-left: 0px;
+    }
+
+    .sobre-nos img {
+        width: 600px;
+        margin-left: -2px;
+    }
+}
+
+@media (max-width:992px) {
+    html {
+        font-size: 50%;
+    }
+
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    .content .List-Menu {
+        display: none;
+    }
+    
+    .one 
+    .two
+    .three {
+        width: 80%;
+        height: 2px;
+        background-color: white;
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+
+    .menu-toggle {
+        width:  30px;
+        height: 30px;
+    }
+
+    .content .on {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(30, 31, 30, 0.8);
+
+    }
+
+
+    .itens-cardapio {
+        grid-template-columns: repeat(2, minmax(50px, 350px));
+    }
+
+    .itens-cardapio .info h4 {
+        margin-left: 12rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
